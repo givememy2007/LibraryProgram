@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.StudentName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Delays = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,25 +45,8 @@
             this.Delays});
             this.dataGridView1.Location = new System.Drawing.Point(13, 13);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(775, 382);
+            this.dataGridView1.Size = new System.Drawing.Size(695, 382);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // Id
-            // 
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            this.Id.Width = 70;
-            // 
-            // StudentName
-            // 
-            this.StudentName.HeaderText = "ФИО студента";
-            this.StudentName.Name = "StudentName";
-            this.StudentName.Width = 250;
-            // 
-            // Delays
-            // 
-            this.Delays.HeaderText = "Задержки книг";
-            this.Delays.Name = "Delays";
             // 
             // button1
             // 
@@ -75,13 +58,33 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // Id
+            // 
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            // 
+            // StudentName
+            // 
+            this.StudentName.HeaderText = "ФИО студента";
+            this.StudentName.Name = "StudentName";
+            this.StudentName.Width = 450;
+            // 
+            // Delays
+            // 
+            this.Delays.HeaderText = "Задержки книг";
+            this.Delays.Name = "Delays";
+            // 
             // Students
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(734, 454);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(750, 493);
+            this.MinimumSize = new System.Drawing.Size(750, 493);
             this.Name = "Students";
             this.Text = "Students";
             this.Load += new System.EventHandler(this.Students_Load);

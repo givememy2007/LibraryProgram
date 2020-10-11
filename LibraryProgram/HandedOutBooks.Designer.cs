@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BookId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BookName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -36,7 +37,6 @@
             this.StudentName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TimeOfIssue = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ReturnTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,45 +51,10 @@
             this.StudentName,
             this.TimeOfIssue,
             this.ReturnTime});
-            this.dataGridView1.Location = new System.Drawing.Point(13, 13);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(775, 383);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // Id
-            // 
-            this.Id.HeaderText = "Номер выдачи";
-            this.Id.Name = "Id";
-            // 
-            // BookId
-            // 
-            this.BookId.HeaderText = "Номер книги";
-            this.BookId.Name = "BookId";
-            // 
-            // BookName
-            // 
-            this.BookName.HeaderText = "Название книги";
-            this.BookName.Name = "BookName";
-            // 
-            // AutorName
-            // 
-            this.AutorName.HeaderText = "ФИО автора";
-            this.AutorName.Name = "AutorName";
-            // 
-            // StudentName
-            // 
-            this.StudentName.HeaderText = "ФИО студента";
-            this.StudentName.Name = "StudentName";
-            // 
-            // TimeOfIssue
-            // 
-            this.TimeOfIssue.HeaderText = "Дата выдачи";
-            this.TimeOfIssue.Name = "TimeOfIssue";
-            // 
-            // ReturnTime
-            // 
-            this.ReturnTime.HeaderText = "Дата возврата";
-            this.ReturnTime.Name = "ReturnTime";
             // 
             // button1
             // 
@@ -101,6 +66,47 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // Id
+            // 
+            this.Id.HeaderText = "Номер выдачи";
+            this.Id.Name = "Id";
+            this.Id.Width = 50;
+            // 
+            // BookId
+            // 
+            this.BookId.HeaderText = "Номер книги";
+            this.BookId.Name = "BookId";
+            this.BookId.Width = 50;
+            // 
+            // BookName
+            // 
+            this.BookName.HeaderText = "Название книги";
+            this.BookName.Name = "BookName";
+            this.BookName.Width = 130;
+            // 
+            // AutorName
+            // 
+            this.AutorName.HeaderText = "ФИО автора";
+            this.AutorName.Name = "AutorName";
+            // 
+            // StudentName
+            // 
+            this.StudentName.HeaderText = "ФИО студента";
+            this.StudentName.Name = "StudentName";
+            this.StudentName.Width = 230;
+            // 
+            // TimeOfIssue
+            // 
+            this.TimeOfIssue.HeaderText = "Дата выдачи";
+            this.TimeOfIssue.Name = "TimeOfIssue";
+            this.TimeOfIssue.Width = 85;
+            // 
+            // ReturnTime
+            // 
+            this.ReturnTime.HeaderText = "Дата возврата";
+            this.ReturnTime.Name = "ReturnTime";
+            this.ReturnTime.Width = 85;
+            // 
             // HandedOutBooks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -108,6 +114,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "HandedOutBooks";
             this.Text = "HandedOutBooks";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

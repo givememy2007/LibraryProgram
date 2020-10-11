@@ -29,15 +29,14 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BookName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AutorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PublisherName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PublishingYear = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Avaliablility = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,46 +48,11 @@
             this.BookName,
             this.AutorName,
             this.PublisherName,
-            this.PublishingYear,
-            this.Avaliablility});
+            this.PublishingYear});
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(776, 384);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // Id
-            // 
-            this.Id.HeaderText = "Номер книги";
-            this.Id.Name = "Id";
-            this.Id.Width = 85;
-            // 
-            // BookName
-            // 
-            this.BookName.HeaderText = "Название книги";
-            this.BookName.Name = "BookName";
-            this.BookName.Width = 150;
-            // 
-            // AutorName
-            // 
-            this.AutorName.HeaderText = "ФИО автора";
-            this.AutorName.Name = "AutorName";
-            // 
-            // PublisherName
-            // 
-            this.PublisherName.HeaderText = "Название издательства";
-            this.PublisherName.Name = "PublisherName";
-            // 
-            // PublishingYear
-            // 
-            this.PublishingYear.HeaderText = "Год издания";
-            this.PublishingYear.Name = "PublishingYear";
-            this.PublishingYear.Width = 85;
-            // 
-            // Avaliablility
-            // 
-            this.Avaliablility.HeaderText = "Наличие";
-            this.Avaliablility.Name = "Avaliablility";
-            this.Avaliablility.Width = 75;
             // 
             // button1
             // 
@@ -120,6 +84,34 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // Id
+            // 
+            this.Id.HeaderText = "Номер книги";
+            this.Id.Name = "Id";
+            this.Id.Width = 85;
+            // 
+            // BookName
+            // 
+            this.BookName.HeaderText = "Название книги";
+            this.BookName.Name = "BookName";
+            this.BookName.Width = 240;
+            // 
+            // AutorName
+            // 
+            this.AutorName.HeaderText = "ФИО автора";
+            this.AutorName.Name = "AutorName";
+            this.AutorName.Width = 200;
+            // 
+            // PublisherName
+            // 
+            this.PublisherName.HeaderText = "Название издательства";
+            this.PublisherName.Name = "PublisherName";
+            // 
+            // PublishingYear
+            // 
+            this.PublishingYear.HeaderText = "Год издания";
+            this.PublishingYear.Name = "PublishingYear";
+            // 
             // Books
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -129,6 +121,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Books";
             this.Text = "Books";
             this.Load += new System.EventHandler(this.Books_Load);
@@ -148,7 +141,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn AutorName;
         private System.Windows.Forms.DataGridViewTextBoxColumn PublisherName;
         private System.Windows.Forms.DataGridViewTextBoxColumn PublishingYear;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Avaliablility;
     }
 }
 

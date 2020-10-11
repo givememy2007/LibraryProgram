@@ -130,11 +130,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="LibraryDB.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="LibraryDB.mdf" />
     <Content Include="LibraryDB_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>LibraryDB.mdf</DependentUpon>
     </Content>
   </ItemGroup>
