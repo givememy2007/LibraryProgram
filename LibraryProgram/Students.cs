@@ -14,12 +14,28 @@ namespace LibraryProgram
 {
     public partial class Students : Form
     {
+        private int bookId;
+        private string bookName;
+        private string autorName;
+
         public Students()
         {
             InitializeComponent();
             LoadData();
+            button1.Hide();
         }
 
+        public Students(int newBookId, string newBookName, string newAutorName)
+        {
+            InitializeComponent();
+            LoadData();
+            button1.Show();
+            bookId = newBookId;
+            bookName = newBookName;
+            autorName = newAutorName;
+
+        }
+        
         private void LoadData()
         {
 
@@ -59,6 +75,70 @@ namespace LibraryProgram
         private void Students_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string message = "Выберите одного студента для выдачи";
+            string caption = "Ошибка при выдаче";
+            int rowCount = dataGridView1.SelectedCells.Count;
+            if (rowCount != 1)
+                MessageBox.Show(message, caption);
+            else
+            {
+                int selectedRowIndex = dataGridView1.SelectedCells[0].RowIndex;
+                DataGridViewRow selectedRow = dataGridView1.Rows[selectedRowIndex];
+                
+                string studentName = Convert.ToString(selectedRow.Cells[1].Value);
+
+                /*
+                                message = bookName + " " + autorName + " " + studentName;
+                                caption = bookId.ToString();
+
+                                MessageBox.Show(message, caption);
+
+                      */
+
+                string connectString = ConfigurationManager.ConnectionStrings["LibraryProgram"].ConnectionString;
+                Console.WriteLine(connectString);
+
+                SqlConnection myConnection = new SqlConnection(connectString);
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "INSERT HandedOutBooks " +
+                    "([BookId], [BookName], [AutorName], [StudentName], [TimeOfIssue]) " +
+                    "VALUES (@bookId, @bookName, @autorName, @studentName, @TimeOfIssue)";
+                cmd.Parameters.AddWithValue("@bookId", bookId);
+                cmd.Parameters.AddWithValue("@bookName", bookName);
+                cmd.Parameters.AddWithValue("@autorName", autorName);
+                cmd.Parameters.AddWithValue("@studentName", studentName);
+                cmd.Parameters.AddWithValue("@TimeOfIssue", DateTime.Today);
+                cmd.Connection = myConnection;
+
+                myConnection.Open();
+                cmd.ExecuteNonQuery();
+                myConnection.Close();
+
+                
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = " UPDATE Books " +
+                    " SET [Avaliability] = [Avaliability] - 1 " +
+                    " WHERE [Id] = @bookId ";
+             //   cmd.Parameters.AddWithValue("@bookId", bookId);
+                cmd.Connection = myConnection;
+
+                myConnection.Open();
+                cmd.ExecuteNonQuery();
+                myConnection.Close();
+                
+
+
+                this.Close();
+
+
+
+
+            }
         }
     }
 }
