@@ -1,0 +1,14 @@
+D:\Projects\LibraryProgram\LibraryProgram\LibraryProgram\obj\Debug\LibraryProgram.csprojAssemblyReference.cache
+D:\Projects\LibraryProgram\LibraryProgram\LibraryProgram\obj\Debug\LibraryProgram.Books.resources
+D:\Projects\LibraryProgram\LibraryProgram\LibraryProgram\obj\Debug\LibraryProgram.HandedOutBooks.resources
+D:\Projects\LibraryProgram\LibraryProgram\LibraryProgram\obj\Debug\LibraryProgram.Properties.Resources.resources
+D:\Projects\LibraryProgram\LibraryProgram\LibraryProgram\obj\Debug\LibraryProgram.Students.resources
+D:\Projects\LibraryProgram\LibraryProgram\LibraryProgram\obj\Debug\LibraryProgram.csproj.GenerateResource.cache
+D:\Projects\LibraryProgram\LibraryProgram\LibraryProgram\obj\Debug\LibraryProgram.csproj.CoreCompileInputs.cache
+D:\Projects\LibraryProgram\LibraryProgram\LibraryProgram\bin\Debug\LibraryDB.mdf
+D:\Projects\LibraryProgram\LibraryProgram\LibraryProgram\bin\Debug\LibraryDB_log.ldf
+D:\Projects\LibraryProgram\LibraryProgram\LibraryProgram\bin\Debug\LibraryProgram.exe.config
+D:\Projects\LibraryProgram\LibraryProgram\LibraryProgram\bin\Debug\LibraryProgram.exe
+D:\Projects\LibraryProgram\LibraryProgram\LibraryProgram\bin\Debug\LibraryProgram.pdb
+D:\Projects\LibraryProgram\LibraryProgram\LibraryProgram\obj\Debug\LibraryProgram.exe
+D:\Projects\LibraryProgram\LibraryProgram\LibraryProgram\obj\Debug\LibraryProgram.pdb
